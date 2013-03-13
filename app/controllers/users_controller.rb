@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   before_filter :correct_user?, :except => [:index]
 
   def index
-    @users = User.all
+#   @users = User.all
+    @users = []
   end
 
   def edit
